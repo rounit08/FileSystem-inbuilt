@@ -33,29 +33,29 @@ fileSystem.touch('file2.txt');
 fileSystem.rm('/docs');
 fileSystem.ls(); // Output: file1.txt file2.txt
 ```
-Documentation
-FileSystem Class
-Constructor
-javascript
-Copy code
-const fileSystem = new FileSystem();
-Initializes a new instance of the FileSystem class with a root directory.
+## Installation
 
-Methods
-mkdir(name): Create a new directory.
-cd(path): Change the current directory.
-ls(path): List contents of the current or specified directory.
-touch(name): Create a new empty file.
-echo(text, fileName): Write text to a file.
-mv(sourcePath, destinationPath): Move a file or directory.
-cp(sourcePath, destinationPath): Copy a file or directory.
-rm(path): Remove a file or directory.
-Example Usage
-javascript
-Copy code
-fileSystem.mkdir('docs');
-fileSystem.cd('/docs');
-fileSystem.touch('example.txt');
-fileSystem.ls(); // Output: example.txt
-fileSystem.rm('/docs/example.txt');
-fileSystem.ls(); // Output: (empty)
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/your-username/in-memory-file-system.git
+    cd in-memory-file-system
+    ```
+
+2. **Install Dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+    This command installs the required dependencies, including Jest for testing.
+
+
+## Testing
+
+This project uses Jest for testing. To run the tests, use the following command:
+
+```bash
+npm test
